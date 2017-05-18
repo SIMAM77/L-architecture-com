@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="40px" viewBox="0 0 23 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-point-to-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-HOMEPAGE" transform="translate(-455.000000, -1016.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="REVUES" transform="translate(405.000000, 840.000000)">
+                <g id="arrow-point-to-right" transform="translate(61.527778, 196.000000) rotate(180.000000) translate(-61.527778, -196.000000) translate(50.000000, 176.000000)">
+                    <path d="M22.0138919,21.9568136 L4.83283435,39.1373405 C3.73991156,40.2307939 1.96792459,40.2307939 0.87553239,39.1373405 C-0.216948244,38.0448599 -0.216948244,36.2729614 0.87553239,35.1805692 L16.0781158,19.9784279 L0.875974547,4.77681719 C-0.216506087,3.6838944 -0.216506087,1.91217273 0.875974547,0.819692093 C1.96845518,-0.273230698 3.74035371,-0.273230698 4.8332765,0.819692093 L22.0143341,18.0004843 C22.5605744,18.54699 22.833385,19.2624878 22.833385,19.9783394 C22.833385,20.6945448 22.5600438,21.4105732 22.0138919,21.9568136 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

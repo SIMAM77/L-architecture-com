@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/*----- REVUES -----*/
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../fonts/Futura-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url("../fonts/Futura-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Futura Medium Italic";
+  src: url("../fonts/Futura-MediumItalic.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Futura Bold";
+  color: #222222;
+}
+
+#connect table {
+  position: relative;
+  top: 30vh;
+  width: 30vw;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 15px 26px;
+  border: 3px solid #222222;
+  box-shadow: 20px 20px 0 0 #3BC0D1;
+}
+
+#connect td {
+  font-size: 2rem;
+}
+
+#connect td input {
+  height: 35px;
+  border: solid 3px #3bc0d1;
+  font-size: 15px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+#connect tr:last-child td input {
+  margin: 0 auto;
+  display: block;
+  background-color: #ffffff;
+  border: solid 3px #3bc0d1;
+  height: 50px;
+  font-family: "Futura Medium";
+  font-size: 20px;
+  color: #3bc0d1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#panel-admin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.4rem;
+}
+
+#panel-admin h1 {
+  font-size: 2rem;
+  margin: 20px auto;
+}
+
+#panel-admin div {
+  margin: 20px auto;
+}
+
+#panel-admin a {
+  color: #3bc0d1;
+  font-size: 1.2rem;
+  margin: 20px auto;
+}
+
+#panel-admin .wrapper-admin {
+  margin: auto;
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid #222222;
+  box-shadow: 20px 20px 0 0 #3BC0D1;
+  padding: 20px 60px 340px 60px;
+}
+
+#revue-index table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#revue-index td {
+  border-bottom: 1px solid #3BC0D1;
+  padding: 20px;
+}
+
+#revue-index tr:last-of-type td {
+  border-bottom: 0px;
+}
+
+#revue-index tr:nth-child(even) {
+  background: #3BC0D1;
+}
+
+#revue-index a {
+  text-transform: uppercase;
+}
+
+#revue-editer {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #222222;
+  box-shadow: 20px 20px 0 0 #3BC0D1;
+}
+
+#revue-editer p {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  margin: 0 auto 30px 30px;
+}
+
+#revue-editer p input {
+  height: 35px;
+  width: 500px;
+  border: solid 3px #3bc0d1;
+  font-size: 15px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+#revue-editer p:last-of-type input {
+  width: 100px;
+}

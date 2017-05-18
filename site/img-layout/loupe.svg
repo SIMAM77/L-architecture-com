@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>loupe</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-REVUES" transform="translate(-1227.000000, -240.000000)" stroke="#222222" stroke-width="2">
+            <g id="RECHERCHE" transform="translate(758.000000, 150.000000)">
+                <g id="CTA-ABONNEMENT" transform="translate(222.000000, 91.000000)">
+                    <g id="loupe" transform="translate(248.335084, 0.813291)">
+                        <path d="M0.539653361,15.7022558 L5.39653361,10.8291419" id="Line" stroke-linecap="square"></path>
+                        <ellipse id="Oval" cx="10.7930672" cy="5.41457095" rx="5.39653361" ry="5.41457095"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

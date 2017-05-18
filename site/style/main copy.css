@@ -1,0 +1,527 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/*----- REVUES -----*/
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../fonts/Futura-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url("../fonts/Futura-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Futura Medium Italic";
+  src: url("../fonts/Futura-MediumItalic.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Futura Bold";
+  color: #222222;
+}
+
+
+/*--------HEADER--------*/
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1;
+  font-family: "Futura Bold";
+}
+
+.inner {
+  width: 90%;
+  max-width: 1660px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header .logo {
+  float: left;
+  width: 15%;
+}
+
+
+/*-----NAV BAR-----*/
+
+header nav {
+  float: right;
+  margin-right: 3%;
+}
+
+header nav li {
+  float: left;
+}
+
+header nav ul li a {
+  padding: 18px 20px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+header nav ul .highlight a {
+  padding: 14px 5px 14px 20px;
+}
+
+header nav ul .highlight a:last-child {
+  padding: 14px 20px 14px 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.highlight {
+  background-color: #3bC0d1;
+  transform: skew(-30deg, 0deg);
+}
+
+.highlight a {
+  float: left;
+  transform: skew(30deg, 0deg);
+}
+
+.logo img {
+  width: 100%;
+}
+
+.bg-noir {
+  background-color: #222222;
+}
+
+.menuburger {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
+.menuburger svg {
+  float: left;
+  padding-right: 15%;
+}
+
+.menuburger p {
+  float: right;
+}
+
+.menuburger-div {
+  opacity: 0;
+  display: none;
+  width: 100%;
+  height: 56.1vh;
+  margin: 150px auto;
+}
+
+.menuburger-div ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menuburger-div ul li {
+  height: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menuburger-div ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.header-active {
+  color: #3bC0d1 !important;
+  fill: #3BC0D1 !important;
+  border-bottom: 2px solid #3bC0d1;
+  border-radius: 2px;
+  padding-bottom: 3px;
+}
+
+.show {
+  opacity: 1;
+  display: block;
+}
+
+.hide {
+  opacity: 0;
+  display: none;
+}
+
+
+/* --------------- */
+
+.recherche {
+  max-width: 90%;
+  float: right;
+  display: block;
+  width: 45%;
+  margin-right: 10.5%;
+  margin-top: 50px;
+}
+
+.une-recherche {
+  font-size: 3.4rem;
+  line-height: 4.5rem;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.une-recherche-borders {
+  float: right;
+  width: 70%;
+  height: 70px;
+  border: 3px solid #222222;
+  box-shadow: 20px 20px 0 0 #3BC0D1;
+}
+
+.une-recherche-borders label {
+  width: 90%;
+  border-bottom: 2px solid #222222;
+  padding-bottom: 4px;
+  margin-left: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background: none;
+}
+
+.une-recherche-borders label input {
+  width: 65%;
+  border: 0;
+}
+
+.une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+  font-family: "Futura Medium Italic";
+  height: 2.2rem;
+  font-size: 1.15rem;
+  line-height: 1.9rem;
+  margin-top: 4%;
+  background: none;
+}
+
+.une-recherche-borders label img {
+  height: 14px;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.revues {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 2%;
+  clear: both;
+}
+
+.revues h2 {
+  font-size: 3.4rem;
+  line-height: 4.5rem;
+  padding-bottom: 3%;
+  padding-left: 6%;
+}
+
+.les-revues {
+  border: 3px solid #000000;
+  box-shadow: -30px 30px 0 0 #3BC0D1;
+  margin-bottom: 5%;
+}
+
+.col33 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0;
+  font-family: "Futura Medium";
+}
+
+.col33 img {
+  height: 241px;
+  width: 100%;
+}
+
+.col33 p {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-family: "Futura Medium";
+}
+
+.cta {
+  height: 43px;
+  width: 100%;
+  border: 2px solid #3BC0D1;
+  background-color: #FFFFFF;
+}
+
+.cta a {
+  margin: 0 auto;
+  color: #3BC0D1;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-family: "Futura Medium";
+}
+
+.pagination {
+  padding: 50px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.pagination ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -1%;
+}
+
+.pagination ul li {
+  height: 18px;
+  width: 18px;
+  border: 3px solid #3BC0D1;
+  border-radius: 99px;
+  list-style: none;
+}
+
+.scrollrevues {
+  display: none;
+}
+
+.bulletactive {
+  background-color: #3BC0D1;
+}
+
+
+/*-----------------*/
+
+@media screen and (max-width:1000px) {
+  .cta {
+    height: 35px;
+  }
+  .cta a {
+    font-size: 1.5rem;
+  }
+  .col33 img {
+    height: 200px;
+  }
+  .col33 p {
+    font-size: 1.6rem;
+  }
+  .pagination span img {
+    height: 20px;
+  }
+  .pagination ul li {
+    height: 14px;
+    width: 14px;
+  }
+  .une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+    font-size: .9rem;
+    height: 11px;
+  }
+  .recherche {
+    margin-right: 12.5%;
+  }
+  header nav ul li a {
+    padding: 14px 24px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .recherche {
+    width: 60%;
+  }
+  .cta {
+    height: 30px;
+  }
+  .cta a {
+    font-size: 1.2rem;
+  }
+  .col33 img {
+    height: 150px;
+  }
+  .col33 p {
+    font-size: 1.3rem;
+  }
+  .pagination span img {
+    height: 16px;
+  }
+  .pagination ul li {
+    height: 12px;
+    width: 12px;
+  }
+  .une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+    margin-top: 10%;
+  }
+  .une-recherche-borders label img {
+    height: 10px;
+  }
+  header nav ul li a {
+    padding: 10px 18px;
+    font-size: .9rem;
+  }
+  header nav ul .highlight a {
+    padding: 10px 5px 10px 16px;
+  }
+  header nav ul .highlight a:last-child {
+    padding: 10px 16px 10px 5px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .cta {
+    height: 25px;
+  }
+  .cta a {
+    font-size: .8rem;
+  }
+  .col33 img {
+    height: 100px;
+  }
+  .col33 p {
+    font-size: .9rem;
+  }
+  .pagination span img {
+    height: 14px;
+  }
+  .pagination ul li {
+    height: 10px;
+    width: 10px;
+  }
+  .une-recherche-borders label img {
+    height: 10px;
+  }
+  .recherche {
+    width: 70%;
+  }
+  header nav ul li a {
+    padding: 8px 15px;
+    font-size: .8rem;
+  }
+  header nav ul .highlight a {
+    padding: 8px 5px 8px 13px;
+  }
+  header nav ul .highlight a:last-child {
+    padding: 8px 13px 8px 5px;
+  }
+}
+
+@media screen and (max-width:560px) {
+  header nav ul li a {
+    font-size: .65rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .recherche {
+    width: 100vw;
+    height: 80vh;
+    margin: 40% 0 0 0;
+  }
+  .une-recherche {
+    margin-bottom: 120px;
+  }
+  .une-recherche-borders {
+    width: 75vw;
+    margin-right: 17%;
+  }
+  .une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+    font-size: .9rem;
+    margin-top: 8%;
+  }
+  .les-revues .col33 {
+    display: none;
+  }
+  .les-revues .col33:first-child {
+    display: block;
+  }
+  .scrollrevues {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+  }
+  .revues h2 {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    padding-bottom: 10%;
+    padding-left: 6%;
+  }
+  .les-revues {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 4%;
+  }
+  .col33 figure {
+    padding-bottom: 15%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .col33 figure img {
+    height: 320px;
+  }
+  .pagination {
+    padding-top: 0;
+    width: 80%;
+  }
+  .col33 p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .cta {
+    height: 43px;
+  }
+  .cta a {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+  .pagination ul li {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #3BC0D1;
+  }
+  nav ul {
+    display: none;
+  }
+  .menuburger {
+    display: block;
+  }
+  .menuburger p {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .logo a img {
+    width: 170%;
+  }
+}

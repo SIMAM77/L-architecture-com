@@ -1,0 +1,2318 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/*----- REVUES -----*/
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../fonts/Futura-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url("../fonts/Futura-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Futura Medium Italic";
+  src: url("../fonts/Futura-MediumItalic.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Futura Bold";
+  color: #222222;
+}
+
+
+/*----------HEADER CONTAINER----------*/
+
+.background_home_containerHeader {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img-layout/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/*--------HEADER--------*/
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1;
+  font-family: "Futura Bold";
+}
+
+.inner {
+  width: 90%;
+  max-width: 1660px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header .logo {
+  float: left;
+  width: 15%;
+}
+
+
+/*-----NAV BAR-----*/
+
+header nav {
+  float: right;
+  margin-right: 3%;
+}
+
+header nav li {
+  float: left;
+}
+
+header nav ul li a {
+  padding: 18px 20px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+header nav ul .highlight a {
+  padding: 14px 5px 14px 20px;
+}
+
+header nav ul .highlight a:last-child {
+  padding: 14px 20px 14px 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.highlight {
+  background-color: #3bC0d1;
+  transform: skew(-30deg, 0deg);
+}
+
+.highlight a {
+  float: left;
+  transform: skew(30deg, 0deg);
+}
+
+.logo img {
+  width: 100%;
+}
+
+.bg-noir {
+  background-color: #222222;
+}
+
+.menuburger {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
+.menuburger svg {
+  float: left;
+  padding-right: 15%;
+}
+
+.menuburger p {
+  float: right;
+}
+
+.menuburger-div {
+  opacity: 0;
+  display: none;
+  width: 100%;
+  height: 56.1vh;
+  margin: 150px auto;
+}
+
+.menuburger-div ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menuburger-div ul li {
+  height: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menuburger-div ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.header-active {
+  color: #3bC0d1 !important;
+  fill: #3BC0D1 !important;
+  border-bottom: 2px solid #3bC0d1;
+  border-radius: 2px;
+  padding-bottom: 3px;
+}
+
+.show {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+
+/* --------------- */
+
+.recherche {
+  max-width: 90%;
+  float: right;
+  display: block;
+  width: 45%;
+  margin-right: 10.5%;
+  margin-top: 50px;
+}
+
+.une-recherche {
+  font-size: 3.4rem;
+  line-height: 4.5rem;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.une-recherche-borders {
+  float: right;
+  width: 70%;
+  height: 70px;
+  border: 3px solid #222222;
+  box-shadow: 20px 20px 0 0 #3BC0D1;
+}
+
+.une-recherche-borders label {
+  width: 90%;
+  border-bottom: 2px solid #222222;
+  padding-bottom: 4px;
+  margin-left: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background: none;
+}
+
+.une-recherche-borders label input {
+  width: 65%;
+  border: 0;
+}
+
+.une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+  font-family: "Futura Medium Italic";
+  height: 2.2rem;
+  font-size: 1.15rem;
+  line-height: 1.9rem;
+  margin-top: 4%;
+  background: none;
+}
+
+.une-recherche-borders label img {
+  height: 14px;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.revues {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 2%;
+  clear: both;
+}
+
+.revues h2 {
+  font-size: 3.4rem;
+  line-height: 4.5rem;
+  padding-bottom: 3%;
+  padding-left: 6%;
+}
+
+.les-revues {
+  border: 3px solid #000000;
+  box-shadow: -30px 30px 0 0 #3BC0D1;
+  margin-bottom: 5%;
+}
+
+.col33 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0;
+  font-family: "Futura Medium";
+}
+
+.col33 figure {
+  cursor: pointer;
+}
+
+.col33 img {
+  height: 241px;
+  width: 100%;
+}
+
+.col33 p {
+  margin: 20px 0;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-family: "Futura Medium";
+}
+
+.cta {
+  height: 43px;
+  width: 100%;
+  border: 2px solid #3BC0D1;
+  background-color: #FFFFFF;
+}
+
+.cta a {
+  margin: 0 auto;
+  color: #3BC0D1;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-family: "Futura Medium";
+}
+
+#revue-alone {
+  padding-top: 5%;
+}
+
+#col33-alone {
+  justify-content: flex-start;
+  padding: 5% 0 0 5%;
+}
+
+#col33-alone button.retour {
+  width: 100px;
+  border: 2px solid #3BC0D1;
+  background-color: #FFFFFF;
+  margin-bottom: 50%;
+}
+
+#col33-alone button.retour a {
+  margin: 0 auto;
+  color: #3BC0D1;
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-family: "Futura Medium";
+  text-decoration: none;
+}
+
+#col33-alone figure {
+  margin-left: -8%;
+}
+
+#col33-alone img {
+  height: 320px;
+  width: 300px;
+}
+
+.partenairescol {
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.partenairescol h3 {
+  text-align: center;
+  color: #3BC0D1;
+  font-size: 2.5rem;
+  font-family: "Futura Medium";
+  padding-top: 20px;
+}
+
+.partenairescol p {
+  padding-top: 50px;
+  text-align: center;
+  color: #3BC0D1;
+  font-size: 1.5rem;
+  margin-bottom: 4%;
+}
+
+.pagination {
+  padding: 50px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.pagination ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -1%;
+}
+
+.pagination ul li {
+  height: 18px;
+  width: 18px;
+  border: 3px solid #3BC0D1;
+  border-radius: 99px;
+  list-style: none;
+}
+
+.scrollrevues {
+  display: none;
+}
+
+.bulletactive {
+  background-color: #3BC0D1;
+}
+
+
+/*----- ACTUALITES -----*/
+
+#toutes-actualites {
+  max-width: 1240px;
+  margin-bottom: 80px;
+}
+
+#toutes-actualites h2 {
+  font-size: 3.4rem;
+  text-align: left;
+  margin: 5% auto;
+}
+
+#toutes-actualites .actu-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#toutes-actualites figure {
+  position: relative;
+  /*width: 31%;*/
+  background: #222222;
+}
+
+#toutes-actualites a {
+
+  width: 31%;
+
+}
+
+#toutes-actualites figure img {
+  width: 100%;
+  height: 200px;
+}
+
+#toutes-actualites figure h3 {
+  font-family: "Futura Medium";
+  padding: 3px 7px 10px 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+}
+
+#toutes-actualites figure span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 173px;
+  background-color: #3bc0d1;
+}
+
+#toutes-actualites figure span figcaption {
+  width: 150px;
+  height: 24px;
+  font-family: "Futura Bold";
+  font-size: 1.5rem;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+#toutes-actualites .actu-rapides {
+  width: 100%;
+  border-bottom: 3px solid #3bc0d1;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+
+#toutes-actualites .actu-rapides p {
+  font-family: "Futura Medium";
+  font-size: 2rem;
+  text-align: left;
+  float: left;
+  padding-right: 15px;
+}
+
+#toutes-actualites .actu-rapides p:last-child {
+  float: right;
+  text-align: left;
+  width: 72%;
+}
+
+#toutes-actualites .actu-rapides span {
+  float: left;
+  font-family: "Futura Bold";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: #3bc0d1;
+}
+
+#toutes-actualites span.voir-actu {
+  font-family: "Futura Medium";
+  font-size: 2rem;
+  text-align: left;
+  float: right;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+#toutes-actualites span.voir-actu a {
+  color: #000;
+  text-decoration: none;
+}
+
+#toutes-actualites span.voir-actu img {
+  height: 15px;
+  padding-left: 6px;
+}
+
+.plus-actu {
+  display: none;
+}
+
+#page-contact .formulaire-contact {
+  max-width: 814px;
+  margin: 0 auto;
+}
+
+#page-contact .formulaire-contact h2 {
+  font-family: "Futura Bold";
+  font-size: 3.6rem;
+  text-align: center;
+  margin: 5% 0;
+}
+
+#page-contact .formulaire-contact h3 {
+  font-family: "Futura Medium";
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#page-contact .formulaire-contact .contact-form .champ {
+  padding: 12px;
+}
+
+#page-contact .formulaire-contact .contact-form .champ label {
+  font-family: "Futura Medium";
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  float: left;
+  padding-bottom: 5px;
+}
+
+#page-contact sub {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+#page-contact .formulaire-contact .contact-form input {
+  height: 35px;
+  border: solid 3px #3bc0d1;
+  font-size: 15px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+#page-contact .formulaire-contact .contact-form .left input {
+  height: 315px;
+}
+
+#page-contact .soumettre {
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+}
+
+#page-contact .soumettre input {
+  margin: 0 auto;
+  display: block;
+  background-color: #ffffff;
+  border: solid 3px #3bc0d1;
+  height: 50px;
+  font-family: "Futura Medium";
+  font-size: 20px;
+  color: #3bc0d1;
+  text-align: center;
+}
+
+
+/*----- INDEX -----*/
+
+
+/*----- TITLE -----*/
+
+.main_title_homepage {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-top: 50vh;
+  font-size: 34px;
+  color: #fff;
+  font-family: "Futura Bold";
+  font-weight: bold;
+}
+
+.scroll_homepage {
+  position: absolute;
+  bottom: 36px;
+  left: 100px;
+  background-color: #3bC0d1;
+  font-size: 24pt;
+  padding: 10px;
+  transform: skewX(-15deg)
+}
+
+.scroll_homepage img {
+  float: left;
+  width: 30px;
+  transform: skewX(15deg)
+}
+
+.scroll_homepage span {
+  display: block;
+  float: left;
+  color: #fff;
+  font-family: "Futura Bold";
+  transform: skewX(15deg)
+}
+
+
+/*----------MAIN----------*/
+
+main {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+
+
+/*-----DERNIER MAGAZINE-----*/
+
+main .container_magazine {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 100px;
+  font-family: "Futura Bold";
+}
+
+main .border {
+  max-width: 600px;
+  width: 85%;
+  height: 344px;
+  border: solid 4px #000;
+  position: relative;
+  transform: translate(-50%);
+  left: 48%;
+}
+
+main .last_magazine {
+  max-width: 600px;
+  width: 80%;
+  height: 344px;
+  background-color: #3bC0d1;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  top: 33px;
+}
+
+.last_magazine h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.last_magazine .arrow_left {
+  float: left;
+  padding-top: 85px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.last_magazine .acheter_abonner {
+  float: left;
+  width: 40%;
+  margin-top: 16px;
+  padding-right: 20px;
+}
+
+.last_magazine .acheter_abonner .acheter {
+  width: 100%;
+  height: 30px;
+  border: solid 2px #fff;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.last_magazine .acheter_abonner .abonner {
+  width: 100%;
+  height: 30px;
+  border: solid 2px #fff;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Futura Bold";
+  font-weight: bold;
+  margin-top: 9px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.container_magazine .couverture_number {
+  width: 32%;
+  float: left;
+  padding-left: 30px;
+}
+
+#scroll .container_magazine .couverture_number img {
+  width: 90%;
+  padding-bottom: 10px;
+}
+
+.container_magazine .couverture_number figcaption {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+
+
+/*----------SECTION NOTRE HISTOIRE----------*/
+
+.notre_histoire {
+  width: 80%;
+  max-width: 1211px;
+  margin: 0 auto;
+  padding-top: 100px;
+  position: relative;
+}
+
+.notre_histoire h2 {
+  font-family: "Futura Bold";
+  font-size: 34px;
+  font-weight: bold;
+  width: 148px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.paragraphe_notreHistoire {
+  height: auto;
+  box-shadow: 30px 30px 0 0 #3bc0d1;
+  border: solid 3px #000000;
+}
+
+.paragraphe_notreHistoire p {
+  padding: 50px;
+  width: 60%;
+  line-height: 27px;
+  font-size: 18px;
+  font-family: "Futura Bold";
+}
+
+.notre_histoire img {
+  position: absolute;
+  width: 30%;
+  right: 50px;
+  top: 150px;
+}
+
+
+/*----------SECTION LE CONCEPT----------*/
+
+.le_concept {
+  width: 80%;
+  max-width: 1211px;
+  margin: 0 auto;
+  padding-top: 200px;
+  position: relative;
+}
+
+.le_concept h2 {
+  font-family: "Futura Bold";
+  font-size: 34px;
+  font-weight: bold;
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+#scroll .container_paragraphe {
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: -30px 30px 0 0 #3bc0d1;
+  border: solid 3px #000000;
+  padding-bottom: 30px;
+}
+
+.paragraphe_approche {
+  width: 60%;
+  float: right;
+  padding-top: 104px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.paragraphe_approche h3, .paragraphe_presence h3 {
+  font-family: "Futura Bold";
+  font-size: 20px;
+  font-weight: 500;
+  color: #3bc0d1;
+  padding-bottom: 10px;
+}
+
+.paragraphe_approche p, .paragraphe_presence p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Futura Bold";
+}
+
+.paragraphe_presence {
+  width: 60%;
+  float: left;
+  padding-top: 50px;
+  padding-left: 50px;
+  box-sizing: border-box
+}
+
+.le_concept .noir_blanc {
+  position: absolute;
+  width: 34%;
+  left: -50px;
+  top: 226px;
+}
+
+.le_concept .ciel {
+  position: absolute;
+  width: 22%;
+  left: 38%;
+  top: 170px;
+}
+
+
+/*----------SECTION DERNIRERE ACTUALITES----------*/
+
+.dernirere_actu {
+  width: 80%;
+  max-width: 1211px;
+  margin: 0 auto;
+  padding-top: 200px;
+  position: relative;
+  font-family: "Futura Bold";
+}
+
+.dernirere_actu h2 {
+  padding-bottom: 40px;
+  font-family: "Futura Bold";
+  font-size: 34px;
+  font-weight: bold;
+  max-width: 368px;
+  padding-left: 80px;
+}
+
+.news_container .news {
+  width: 33.333333333%;
+  box-sizing: border-box;
+  float: left;
+  background-color: #3bc0d1;
+  padding-right: 1.5%;
+  background-clip: content-box;
+}
+
+.news_container .news:nth-child(2) {
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+
+.news_container .news:last-child {
+  padding-right: 0;
+  padding-left: 1.5%;
+}
+
+.news img {
+  width: 100%;
+}
+
+.news p {
+  padding: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.news span {
+  text-align: center;
+  display: block;
+  border: solid 2px #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.news a {
+  text-decoration: none;
+}
+
+.news:nth-child(2) span {
+  margin-bottom: 15px;
+}
+
+.border_actu {
+  width: 85%;
+  max-width: 1117px;
+  border: solid 3px #000000;
+  height: 358px;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-50%);
+  left: 50%;
+  top: 295px;
+}
+
+
+/*----------SECTION NEWSLETTER----------*/
+
+.newsletter {
+  padding-top: 100px;
+  max-width: 1240px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.newsletter .border_newsletter {
+  width: 100%;
+  border: solid 3px #3bc0d1;
+  height: auto;
+}
+
+.newsletter h2 {
+  text-align: center;
+  font-family: "Futura Bold";
+  font-size: 34px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.newsletter input {
+  margin: 0 auto;
+  display: block;
+  border: solid 3px #3bc0d1;
+  height: 50px;
+  width: 70%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Futura Bold";
+  font-size: 18px;
+}
+
+
+/*----------FOOTER----------*/
+
+#desktop_footer {
+  width: 100%;
+  background-color: #222222;
+  font-family: "Futura Bold";
+  color: #979797;
+  font-size: 12px;
+  margin-top: 70px;
+}
+
+#desktop_footer .footer_container {
+  margin: 0 auto;
+  width: 85%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#desktop_footer .contact {
+  float: left;
+  width: 33.333333%;
+  text-transform: uppercase;
+}
+
+.contact a, .mentions_legales a, .admin_portal a {
+  text-decoration: none;
+  color: #979797;
+}
+
+#desktop_footer .social_network {
+  float: left;
+  width: 33.33333333%;
+}
+
+#desktop_footer .social_network p {
+  text-transform: uppercase;
+}
+
+#desktop_footer .follow_us {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#desktop_footer .follow_us a {
+  float: left;
+  padding-top: 5px;
+  margin-left: 28px;
+}
+
+#desktop_footer .follow_us a:first-of-type {
+  clear: both;
+}
+
+#desktop_footer .social_network img {
+  float: left;
+  padding-left: 10px;
+}
+
+#desktop_footer.admin_portal {
+  float: left;
+  width: 33.33333333%;
+}
+
+#desktop_footer .admin_portal a {
+  float: right;
+  text-transform: uppercase;
+}
+
+#desktop_footer .middle_border {
+  float: left;
+  width: 100%;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  height: 1px;
+  box-sizing: unset;
+  background-color: #979797;
+  background-clip: content-box;
+}
+
+#desktop_footer .copyright {
+  float: left;
+  width: 33.333333%;
+}
+
+#desktop_footer .mentions_legales {
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+
+#desktop_footer .realisation {
+  float: left;
+  width: 33.33333%;
+  text-align: right;
+}
+
+
+/*--------------------block hidden responsive--------------------*/
+
+main .mobile_derniere_actu {
+  display: none;
+}
+
+main .mobile_notre_histoire {
+  display: none;
+}
+
+main .mobile_notre_concept {
+  display: none;
+}
+
+#mobile_footer {
+  display: none;
+}
+
+
+/*-----------------*/
+
+
+/*----------CSS PAGE FORMULAIRE----------*/
+
+#formulaire sub {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+#formulaire .main_title {
+  text-align: center;
+  padding-top: 170px;
+  font-family: "Futura Bold";
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#formulaire .main_title span {
+  border-bottom: solid;
+  color: #3bc0d1;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+#commander-abonnement-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 30% !important;
+  padding: 0 !important;
+  margin: 0 0 0 20px !important;
+}
+
+#commander-abonnement-form .label-alone {
+  display: flex;
+}
+
+form.global-form input[type=checkbox].css-checkbox, form.global-form input[type=radio].css-radio {
+  width: 15px;
+}
+
+.css-label {
+  width: 70%;
+  margin-left: 20px;
+}
+
+form.global-form input[type=checkbox].css-checkbox+label.css-label, form.global-form input[type=radio].css-radio+label.css-label {
+  height: 17px;
+  display: inline-block;
+  line-height: 17px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  color: #7a828b;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-in-out, color 300ms ease-in-out;
+  -o-transition: background 300ms ease-in-out, color 300ms ease-in-out;
+  transition: background 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+form.global-form label.css-label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#formulaire form {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 250px;
+}
+
+@media screen and (max-width:1060px) {
+  #commander-abonnement-form {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width:800px) {
+  #commander-abonnement-form {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width:650px) {
+  #commander-abonnement-form {
+    width: 100% !important;
+    margin-top: 70px !important;
+  }
+  .main_title {
+    flex-direction: column;
+    text-align: center;
+    align-items: center !important;
+  }
+  #commander-abonnement-form .label-alone {
+    margin-top: 30px !important;
+    align-self: center !important;
+  }
+  .box {
+    align-items: center;
+  }
+}
+
+#formulaire .main_title span img {
+  width: 40px;
+  padding-left: 10px;
+}
+
+#formulaire form .right, #page-contact form .right {
+  float: left;
+  width: 50%;
+  text-align: center;
+  border: none;
+}
+
+#formulaire form label, input, #pays {
+  width: 340px;
+}
+
+#formulaire form label {
+  font-family: "Futura Medium";
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  float: left;
+  padding-bottom: 5px;
+}
+
+#formulaire form input, #pays {
+  height: 35px;
+  border: solid 3px #3bc0d1;
+  font-size: 15px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+#formulaire .champ {
+  padding: 12px;
+  /*width: 340px;*/
+}
+
+#formulaire .left, #page-contact form .left {
+  float: left;
+  width: 50%;
+  text-align: center;
+  border: none;
+}
+
+#page-contact form .left, #page-contact form .right {
+  text-align: left;
+}
+
+#formulaire .left .champ {
+  /*float: right;*/
+}
+
+
+/*----------exemle de article tarif---------*/
+
+#formulaire .exemple_container {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+#formulaire .exemple_container h2 {
+  font-family: "Futura bold";
+  font-size: 20px;
+}
+
+#formulaire .exemple_container .previsualisation {
+  margin: 0 auto;
+  display: block;
+  width: 20%;
+}
+
+#formulaire .tarifs {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+#formulaire .container_tarif, .container_suisse {
+  width: 50%;
+  float: left;
+}
+
+#formulaire .tarifs_title {
+  font-size: 24px;
+  padding-bottom: 13px;
+  float: left;
+  width: 100%;
+}
+
+#formulaire .franc {
+  margin-left: 53px;
+  width: 100%;
+}
+
+#formulaire .tarifs_title span {
+  color: #3bc0d1;
+}
+
+#formulaire .tarifs .tarif_euro {
+  width: 335px;
+  height: auto;
+  box-shadow: 10px 10px 0 0 #3bc0d1;
+  border: solid 3px #000000;
+  float: left;
+}
+
+#formulaire .tarifs .suisse {
+  float: right;
+}
+
+#formulaire .tarif_euro .case {
+  width: 100%;
+  height: auto;
+  float: left;
+  font-family: "Futura Bold"
+}
+
+#formulaire .tarif_euro .case {
+  padding: 20px;
+  border-bottom: solid 3px #000000;
+  box-sizing: border-box;
+}
+
+#formulaire .tarif_euro .case p {
+  font-family: "Futura Bold";
+  font-size: 20px;
+  float: left;
+  line-height: 0px;
+}
+
+#formulaire .tarif_euro img {
+  width: 15px;
+  float: right;
+}
+
+#formulaire .tarif_euro .case .prix {
+  float: right;
+  padding-right: 62px!important;
+}
+
+#formulaire .tarif_euro .case .quantite:first-child {
+  padding-right: 30px;
+  float: right;
+}
+
+#formulaire .tarif_euro .first_case .nombre {
+  float: right;
+}
+
+#formulaire .tarif_euro .case .frais_de_port {
+  float: right;
+  padding-top: 25px;
+  font-size: 16 px;
+}
+
+#formulaire .tarif_euro .case .prix {
+  float: right;
+  padding-right: 30px;
+}
+
+#formulaire .soumettre {
+  width: 100%;
+  float: left;
+  padding-top: 100px;
+}
+
+#formulaire .soumettre input {
+  margin: 0 auto;
+  display: block;
+  background-color: #ffffff;
+  border: solid 3px #3bc0d1;
+  height: 50px;
+  font-family: "Futura Medium";
+  font-size: 20px;
+  color: #3bc0d1;
+  text-align: center;
+}
+
+#page-contact .map-contact {
+  width: 100%;
+  max-width: 1100px;
+  margin: 80px auto 0 auto;
+}
+
+#page-contact .map-contact .map {
+  width: 602px;
+  height: 337px;
+  background-color: #d8d8d8;
+  box-shadow: -20px 20px 0 0 #3bc0d1;
+  float: left;
+}
+
+#page-contact .map-contact .contact-architecture {
+  float: left;
+  margin-left: 75px;
+  margin-top: 55px;
+}
+
+#page-contact .map-contact .contact-architecture p {
+  margin-bottom: 65px;
+  height: 33%;
+  font-family: "Futura Medium";
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+#page-contact .map-contact .contact-architecture p img {
+  padding-right: 10px;
+}
+
+@media screen and (max-width:1175px) {
+  #page-contact .formulaire-contact .contact-form .champ {
+    text-align: center;
+    padding: 20px;
+  }
+  #page-contact .map-contact .map {
+    float: none;
+    margin: 0 auto;
+  }
+  #page-contact .map-contact .contact-architecture {
+    float: none;
+    margin-left: 0px;
+  }
+  #page-contact .map-contact .contact-architecture p {
+    text-align: center;
+  }
+}
+
+
+/*----------FIN CSS PAGE FORMULAIRE----------*/
+
+
+/*----------CSS PAGE ACTU ARTICLE----------*/
+
+#article_actu .intro_img {
+  margin: 0 auto;
+  display: block;
+  box-shadow: 30px 30px 0 0 #3bc0d1;
+  width: 70%;
+  margin-top: 50px;
+}
+
+#article_actu .information_article {
+  padding-top: 100px;
+}
+
+#article_actu .information_article h3 {
+  padding-bottom: 44px;
+  font-family: "Futura Bold";
+  font-size: 24px;
+}
+
+#article_actu .information_article h3 span {
+  color: #3bc0d1;
+}
+
+#article_actu .information_article p {
+  font-size: 18px;
+}
+
+#article_actu .information_article .first_paragraph {
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+
+#article_actu .information_article .auteur {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+#article_actu .information_article .auteur img {
+  float: left;
+  width: 10%;
+}
+
+#article_actu .information_article .auteur p {
+  line-height: 113px;
+  padding-left: 20px;
+}
+
+#article_actu .information_article .auteur span {
+  color: #3bc0d1
+}
+
+#article_actu .information_article .auteur .auteur_nom {
+  float: left;
+}
+
+#article_actu .autres_articles {
+  padding-top: 80px;
+  height: auto;
+}
+
+#article_actu .autres_articles .border_ {
+  width: 100%;
+  height: auto;
+}
+
+#article_actu .autres_articles .border_right {
+  width: 33.33333%;
+  float: left;
+  height: 2px;
+  border-radius: 100px;
+  background-color: #3bc0d1;
+}
+
+#article_actu .autres_articles .border_ p {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  width: 33.33333%;
+  height: auto;
+  display: block;
+  font-family: "Futura Medium";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#article_actu .autres_articles .border_left {
+  width: 33.33333%;
+  float: right;
+  height: 2px;
+  border-radius: 100px;
+  background-color: #3bc0d1;
+}
+
+#article_actu .could_interest a {
+  width: 50%;
+}
+
+#article_actu .could_interest img {
+  width: 100%;
+}
+
+
+
+#article_actu .could_interest {
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 77px;
+  padding-top: 30px
+}
+
+@media only screen and (max-width: 768px){
+  #article_actu .could_interest{
+    width: 100%;
+  }
+}
+
+
+#article_actu .could_interest span {
+  color: #3bc0d1;
+}
+
+#article_actu .could_interest p {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/*----------FIN CSS ARTICLE----------*/
+
+
+/*---------CSS IFRAME---------*/
+
+#iframe h2 {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 50px;
+}
+
+#iframe .container_iframe {
+  position: relative;
+  height: 1006px;
+  box-shadow: 30px 30px 0 0 #3bc0d1;
+  width: 80%;
+  top: 100px;
+  margin: 0 auto;
+  border: 3px solid #000;
+  margin-bottom: 150px;
+}
+
+#iframe .container_iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+}
+
+
+/*----------FIN CSS IFRAME---------*/
+
+@media screen and (max-width:1000px) {
+  .cta {
+    height: 35px;
+  }
+  .cta a {
+    font-size: 1.5rem;
+  }
+  .col33 img {
+    height: 200px;
+  }
+  .col33 p {
+    font-size: 1.6rem;
+  }
+  .pagination span img {
+    height: 20px;
+  }
+  .pagination ul li {
+    height: 14px;
+    width: 14px;
+  }
+  .une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+    font-size: .9rem;
+    height: 11px;
+  }
+  .recherche {
+    margin-right: 12.5%;
+  }
+  header nav ul li a {
+    padding: 14px 24px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .recherche {
+    width: 60%;
+  }
+  .cta {
+    height: 30px;
+  }
+  .cta a {
+    font-size: 1.2rem;
+  }
+  .col33 img {
+    height: 150px;
+  }
+  .col33 p {
+    font-size: 1.3rem;
+  }
+  .pagination span img {
+    height: 16px;
+  }
+  .pagination ul li {
+    height: 12px;
+    width: 12px;
+  }
+  .une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+    margin-top: 10%;
+  }
+  .une-recherche-borders label img {
+    height: 10px;
+  }
+  header nav ul li a {
+    padding: 10px 18px;
+    font-size: .9rem;
+  }
+  header nav ul .highlight a {
+    padding: 10px 5px 10px 16px;
+  }
+  header nav ul .highlight a:last-child {
+    padding: 10px 16px 10px 5px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .cta {
+    height: 25px;
+  }
+  .cta a {
+    font-size: .8rem;
+  }
+  .col33 img {
+    height: 100px;
+  }
+  .col33 p {
+    font-size: .9rem;
+  }
+  .pagination span img {
+    height: 14px;
+  }
+  .pagination ul li {
+    height: 10px;
+    width: 10px;
+  }
+  .une-recherche-borders label img {
+    height: 10px;
+  }
+  .recherche {
+    width: 70%;
+  }
+  header nav ul li a {
+    padding: 8px 15px;
+    font-size: .8rem;
+  }
+  header nav ul .highlight a {
+    padding: 8px 5px 8px 13px;
+  }
+  header nav ul .highlight a:last-child {
+    padding: 8px 13px 8px 5px;
+  }
+}
+
+@media screen and (max-width:560px) {
+  header nav ul li a {
+    font-size: .65rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .recherche {
+    width: 100vw;
+    height: 80vh;
+    margin: 40% 0 0 0;
+  }
+  .une-recherche {
+    margin-bottom: 120px;
+  }
+  .une-recherche-borders {
+    width: 75vw;
+    margin-right: 17%;
+  }
+  .une-recherche-borders label input[value="Entrer un numéro, une région..."] {
+    font-size: .9rem;
+    margin-top: 8%;
+  }
+  .les-revues .col33 {
+    display: none;
+  }
+  .les-revues .col33:first-child {
+    display: block;
+  }
+  .scrollrevues {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+  }
+  .revues h2 {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    padding-bottom: 10%;
+    padding-left: 6%;
+  }
+  .les-revues {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 4%;
+  }
+  .col33 figure {
+    padding-bottom: 15%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .col33 figure img {
+    height: 320px;
+    cursor: pointer;
+  }
+  .pagination {
+    padding-top: 0;
+    width: 80%;
+  }
+  .col33 p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .cta {
+    height: 43px;
+  }
+  .cta a {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+  }
+  .pagination ul li {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #3BC0D1;
+  }
+  nav ul {
+    display: none;
+  }
+  .menuburger {
+    display: block;
+  }
+  .menuburger p {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .logo a img {
+    width: 170%;
+  }
+}
+
+
+/*----- -----*/
+
+@media only screen and (max-width: 768px) {
+  /*----------BURGER MENU----------*/
+  /*----------SCROLL BUTTON----------*/
+  .scroll_homepage {
+    font-size: 20px;
+  }
+  .scroll_homepage img {
+    width: 20px;
+  }
+  /*----------dernirere actu----------*/
+  .last_magazine .acheter_abonner {
+    margin-top: -28px;
+    width: 45%;
+    padding-left: 10%;
+  }
+  .last_magazine .acheter_abonner .acheter {
+    margin-bottom: 0px;
+  }
+  .container_magazine .couverture_number img {
+    width: 70%;
+    padding-bottom: 0px;
+    padding-left: 50%;
+    padding-top: 10px;
+  }
+  .container_magazine .couverture_number figcaption {
+    padding-left: 40%;
+    width: 100%;
+    +
+  }
+  /*----------dernireres news----------*/
+  .news_container .news {
+    width: 50%;
+  }
+  .news_container .news:last-child {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 20%;
+    padding-top: 20px;
+  }
+  .border_actu {
+    height: 690px;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  main .dernirere_actu {
+    display: none;
+  }
+  .newsletter {
+    display: none;
+  }
+  /*----------tire principal----------*/
+  .main_title_homepage {
+    text-align: left;
+    left: 30px;
+    width: 80%;
+  }
+  /*----------scroll----------*/
+  .scroll_homepage {
+    background-color: transparent;
+    left: 10px;
+  }
+  .scroll_homepage span {
+    color: #3bc0d1;
+  }
+  .scroll_homepage img {
+    width: 15px;
+    padding-right: 5px;
+  }
+  /*----------Dernirere actu----------*/
+  main .container_magazine {
+    display: none;
+  }
+  main .mobile_derniere_actu {
+    display: block;
+  }
+  main .mobile_derniere_actu h2 {
+    text-align: center;
+    padding-top: 70px;
+    font-family: "Futura Bold";
+    font-size: 24px;
+    font-weight: bold;
+  }
+  main .mobile_derniere_actu img {
+    width: 100%;
+    padding-top: 30px;
+  }
+  main .mobile_derniere_actu p {
+    font-family: "Futura Bold";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  main .mobile_derniere_actu span {
+    width: 100%;
+    border: solid 2px #3bc0d1;
+    display: block;
+    text-align: center;
+    height: 31px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main .mobile_derniere_actu a {
+    font-family: "Futura Bold";
+    font-size: 24px;
+    color: #3bc0d1;
+    text-decoration: none;
+  }
+  /*----------Notre Histoire----------*/
+  main .notre_histoire {
+    display: none;
+  }
+  main .mobile_notre_histoire {
+    display: block;
+    padding-bottom: 50px;
+  }
+  main .mobile_notre_histoire h2 {
+    padding-top: 70px;
+    font-family: "Futura Bold";
+    font-size: 24px;
+    font-weight: bold;
+  }
+  main .mobile_notre_histoire p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  main .mobile_notre_histoire .voir_plus {
+    float: right;
+  }
+  main .mobile_notre_histoire a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Futura Bold";
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  /*----------Notre Concept----------*/
+  main .le_concept {
+    display: none;
+  }
+  main .mobile_notre_concept {
+    display: block;
+    padding-bottom: 50px;
+  }
+  main .mobile_notre_concept h2 {
+    padding-top: 70px;
+    font-family: "Futura Bold";
+    font-size: 24px;
+    font-weight: bold;
+  }
+  main .mobile_notre_concept p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 20px;
+  }
+  main .mobile_notre_concept .voir_plus {
+    float: right;
+  }
+  main .mobile_notre_concept a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Futura Bold";
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  /*----------FOOTER----------*/
+  #desktop_footer {
+    display: none;
+  }
+  #mobile_footer {
+    background-color: #222222;
+    display: block;
+    color: #979797;
+    margin-top: 20px;
+  }
+  #mobile_footer h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Futura Bold";
+  }
+  #mobile_footer input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    text-align: right;
+    padding-right: 30px;
+  }
+  #mobile_footer a {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: none;
+    color: #979797;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Futura Bold";
+    float: left;
+  }
+  #mobile_footer h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  #mobile_footer p {
+    text-align: center;
+    font-family: "Futura Bold";
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  #mobile_footer .follow_us {
+    width: 10%;
+    margin: 0 auto;
+  }
+  #mobile_footer img {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+  }
+  #mobile_footer .res_contact {
+    width: 100%;
+    padding-bottom: 18px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #col33-alone button.retour {
+    margin-bottom: 55%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  #col33-alone button.retour {
+    margin-bottom: 65%;
+  }
+}
+
+@media screen and (max-width:850px) {
+  #col33-alone button.retour {
+    margin-bottom: 75%;
+  }
+  #col33-alone img {
+    height: 250px;
+    width: 200px;
+  }
+  #col33-alone figure {
+    margin-left: -13%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  #col33-alone button.retour {
+    margin-bottom: 80%;
+  }
+  #col33-alone img {
+    height: 200px;
+    width: 120px;
+  }
+  #col33-alone figure {
+    margin-left: -13%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #col33-alone button.retour {
+    margin-bottom: 20%;
+  }
+  #col33-alone img {
+    height: 200px;
+    width: 120px;
+  }
+  #col33-alone figure {
+    margin-left: 25%;
+  }
+}
+
+
+/* ----------- responsive page formulaire---------- */
+
+@media only screen and (max-width: 1300px) {
+  #formulaire .container_tarif, .container_suisse {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #formulaire .franc {
+    float: left;
+    margin-left: 0px;
+  }
+  #formulaire .tarifs .suisse {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 1173px) {
+  #formulaire form .right, #formulaire .left, #page-contact form .right, #page-contact form .left {
+    width: 100%;
+  }
+  #formulaire .exemple_container .previsualisation {
+    width: 40%;
+  }
+  #formulaire .exemple_container h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  #formulaire .container_tarif, .container_suisse {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #formulaire .exemple_container .previsualisation {
+    width: 80%;
+  }
+  #formulaire .container_tarif, .container_suisse {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  #formulaire .tarifs_title {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  #formulaire form label, input, #pays {
+    width: 100%;
+    text-align: left;
+  }
+  #formulaire form {
+    width: 100%;
+  }
+  #formulaire .tarifs {
+    width: 100%;
+  }
+  #formulaire .tarifs .tarif_euro {
+    width: 100%;
+  }
+  #formulaire .soumettre {
+    padding-top: 0;
+  }
+  #formulaire .tarifs .tarif_euro {
+    box-shadow: none;
+  }
+}
+
+
+/*---------- RESPONSIVE PAGE ARTICLE-----------*/
+
+@media only screen and (max-width: 500px) {
+  #article_actu .information_article h3 {
+    font-size: 22px;
+  }
+  #article_actu .intro_img {
+    box-shadow: none;
+    width: 100%;
+  }
+  #article_actu .information_article .auteur img {
+    width: 20%;
+  }
+  #article_actu .batiment_moderne, .rehabilitation {
+    padding: 0px;
+  }
+  #article_actu .batiment_moderne {
+    padding-left: 10px
+  }
+  #article_actu .rehabilitation {
+    padding-left: 10px
+  }
+  #article_actu .batiment_moderne p, .rehabilitation p {
+    font-size: 15px;
+  }
+  #article_actu .autres_articles .border_right, .border_left {
+    display: none;
+  }
+  #article_actu .autres_articles .border_ p {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #article_actu .information_article .auteur p {
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width:1170px) {
+  #toutes-actualites .actu-rapides p:last-child {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width:930px) {
+  #toutes-actualites .actu-rapides p:last-child {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:805px) {
+  #toutes-actualites .actu-rapides p:last-child {
+    width: 50%;
+  }
+  #toutes-actualites figure img {
+    height: 175px;
+  }
+  #toutes-actualites figure h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:650px) {
+  #toutes-actualites .actu-rapides p:last-child {
+    width: 40%;
+  }
+  #toutes-actualites figure img {
+    height: 145px;
+  }
+  #toutes-actualites figure h3 {
+    font-size: 1.1rem;
+  }
+  #toutes-actualites figure span {
+    width: 80%;
+    height: auto;
+  }
+  #toutes-actualites figure span figcaption {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:555px) {
+  #toutes-actualites span.voir-actu {
+    margin-top: 5px;
+    margin-right: 40px;
+  }
+  #toutes-actualites .actu-rapides p:last-child {
+    width: 35%;
+  }
+  #toutes-actualites figure img {
+    height: 120px;
+  }
+  #toutes-actualites figure h3 {
+    font-size: 1rem;
+  }
+  #toutes-actualites figure span figcaption {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #toutes-actualites .actu-images {
+    display: none;
+  }
+  #toutes-actualites .actu-images:first-of-type {
+    display: block;
+    width: 100%;
+  }
+  #toutes-actualites figure {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  #toutes-actualites figure:last-of-type {
+    display: none;
+  }
+  #toutes-actualites figure img {
+    height: 150px;
+  }
+  #toutes-actualites figure h3 {
+    font-size: 1.3rem;
+  }
+  #toutes-actualites figure span figcaption {
+    font-size: 1.1rem;
+  }
+  #toutes-actualites .actu-rapides p:last-child {
+    clear: both;
+    width: 83.5%;
+  }
+  #toutes-actualites span.voir-actu img {
+    width: 35px;
+    height: 32px;
+  }
+  .plus-actu {
+    display: inline-block;
+    margin-bottom: -6px;
+  }
+  .triangleactu {
+    display: none;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #page-contact .map-contact .map {
+    width: 500px;
+    height: auto;
+  }
+  #page-contact .map-contact .map img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:570px) {
+  #page-contact .map-contact .map {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #page-contact .map-contact .map {
+    width: 300px;
+  }
+}

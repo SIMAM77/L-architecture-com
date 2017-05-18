@@ -1,0 +1,20 @@
+{
+    "name": "benchaa/crud_si",
+    "description": "mon",
+    "type": "dump",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "benImran",
+            "email": "benchaa.said-medjahed@hetic.net"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^3.2"
+    },
+    "autoload":{
+        "psr-4":{
+            "CRUD\\":"src/"
+        }
+    }
+}
