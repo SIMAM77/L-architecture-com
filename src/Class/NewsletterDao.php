@@ -104,8 +104,8 @@ class NewsletterDao
 	              realisations,
 	              rubriques,
 	              lieu,
-	              departement,
-	              img
+	              departement
+	              
                 FROM
 	              newsletter";
 
